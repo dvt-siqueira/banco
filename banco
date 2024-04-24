@@ -1,0 +1,13 @@
+create DATABASE escola;
+use escola;
+
+CREATE TABLE ALUNO (
+    ID serial PRIMARY KEY ,
+    nome VARCHAR(100),
+    email VARCHAR(100),
+    endereco VARCHAR(255)
+);
+
+INSERT INTO ALUNO (nome, email, endereco) VALUES ('DAvi', 'davi@email.com', 'Rua Reis, 153');
+
+select * from aluno;
